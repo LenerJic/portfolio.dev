@@ -1,0 +1,31 @@
+---
+import SectionContainer from "./SectionContainer.astro";
+---
+
+<SectionContainer id="about">
+  <div
+    class="flex flex-col lg:flex-row lg:items-center lg:justify-evenly lg:w-4/6"
+  >
+    <div class="flex items-center justify-center">
+      <img
+        src="https://images.unsplash.com/photo-1509966756634-9c23dd6e6815?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="About"
+        class="object-cover rounded-full size-44 lg:size-80 mb-7 lg:mb-0 shadow-lg shadow-zinc-950"
+      />
+    </div>
+    <article class="flex-1 text-center lg:text-left space-y-4 max-w-lg">
+      <h2 class="text-4xl font-bold text-gray-50 mb-2">
+        Acerca <span class="text-gradient">De Mí</span>
+      </h2>
+      <p
+        class="text-gray-200 text-justify md:text-2xl lg:text-base 2xl:text-lg leading-6"
+      >
+        Soy apasionado a la programación con un gran interés en crear
+        aplicaciones web con experiencias de usuario modernas, interactivas y
+        atractivas. Estoy comprometido a mejorar continuamente mis habilidades y
+        conocimientos para proporcionar soluciones innovadoras y creativas a
+        distintos problemas.
+      </p>
+    </article>
+  </div>
+</SectionContainer>

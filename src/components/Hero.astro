@@ -1,0 +1,27 @@
+---
+import HeroImage from "./HeroImage.astro";
+import ListContacts from "./ListContacts.astro";
+import SectionContainer from "./SectionContainer.astro";
+---
+
+<SectionContainer id="home">
+  <div
+    class="flex flex-col lg:flex-row lg:items-center lg:justify-evenly lg:w-4/6"
+  >
+    <HeroImage />
+    <div class="text-center lg:text-left lg:mx-0 space-y-8">
+      <h1
+        class="text-2xl font-bold py-1 xl:text-3xl 2xl:text-5xl text-gradient"
+      >
+        Hola, soy Jhostin Lener
+      </h1>
+      <p
+        class="text-gray-50 text-justify md:text-3xl lg:text-xl xl:text-lg max-w-lg"
+      >
+        Soy Programador y Desarrollador Enfocado en Aplicaciones Web haciendo
+        uso de Frameworks de Javascript y dando estilos con Tailwind CSS.
+      </p>
+      <ListContacts />
+    </div>
+  </div>
+</SectionContainer>

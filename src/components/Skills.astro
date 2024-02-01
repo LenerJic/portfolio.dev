@@ -1,0 +1,32 @@
+---
+import AngularLogo from "@/images/logos/AngularLogo.astro";
+import AstroLogo from "@/images/logos/AstroLogo.astro";
+import CssLogo from "@/images/logos/CssLogo.astro";
+import HtmlLogo from "@/images/logos/HtmlLogo.astro";
+import JavascriptLogo from "@/images/logos/JavascriptLogo.astro";
+import NestLogo from "@/images/logos/NestLogo.astro";
+import PrismaLogo from "@/images/logos/PrismaLogo.astro";
+import TailwindLogo from "@/images/logos/TailwindLogo.astro";
+import SectionContainer from "./SectionContainer.astro";
+---
+
+<SectionContainer id="skills">
+  <div class="flex flex-col space-y-6 2xl:space-y-9 text-center lg:w-3/5">
+    <h3 class="text-4xl font-semibold">
+      Mis <span class="text-gradient">Habilidades</span>
+    </h3>
+    <p class="text-zinc-200 text-xl 2xl:text-2xl">Lenguajes y Frameworks</p>
+    <div
+      class="grid grid-cols-2 md:grid-cols-4 justify-items-center py-6 gap-x-4 gap-y-7 lg:gap-10"
+    >
+      <HtmlLogo class="lg:size-28 size-16" />
+      <CssLogo class="lg:size-28 size-16" />
+      <JavascriptLogo class="lg:size-28 size-16" />
+      <TailwindLogo class="lg:size-28 size-16" />
+      <AstroLogo class="lg:size-28 size-16" />
+      <AngularLogo class="lg:size-28 size-16" />
+      <NestLogo class="lg:size-28 size-16" />
+      <PrismaLogo class="lg:size-28 size-16" />
+    </div>
+  </div>
+</SectionContainer>

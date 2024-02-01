@@ -1,0 +1,65 @@
+---
+import ContactLink from "./ContactLink.astro";
+import FacebookIcon from "@/images/icons/Facebook.astro";
+import WhatsAppIcon from "@/images/icons/WhatsApp.astro";
+import MailIcon from "@/images/icons/Mail.astro";
+import Github from "@/images/icons/Github.astro";
+---
+
+<div class="flex flex-col lg:flex-row items-center">
+  <a href="/my_cv.pdf" target="_blank" class="btn-primary mb-3 lg:mr-3 lg:mb-0">
+    Descargar CV</a
+  >
+  <div
+    class="flex flex-wrap gap-3 items-center justify-center text-zinc-100 w-auto font-semibold"
+  >
+    <ContactLink
+      href="https://www.facebook.com/profile.php?id=100011450841906"
+      class="contact-button contact-button-sky"
+    >
+      <FacebookIcon class="size-4 mr-2" />
+      Facebook
+    </ContactLink>
+
+    <ContactLink
+      href="https://wa.pe/51922309422?text=Hola"
+      class="contact-button contact-button-green"
+    >
+      <WhatsAppIcon class="size-4 mr-2" />
+      WhatsApp
+    </ContactLink>
+
+    <ContactLink
+      href="https://github.com/LenerJic"
+      class="contact-button contact-button-gray"
+    >
+      <Github class="size-4 mr-2" />
+      Github
+    </ContactLink>
+
+    <ContactLink
+      href="mailto:jleneringach@outlook.com"
+      class="contact-button contact-button-orange"
+    >
+      <MailIcon class="size-4 mr-2" />
+      Correo
+    </ContactLink>
+  </div>
+</div>
+<style>
+  .contact-button {
+    @apply text-sm py-1 px-2 flex items-center border-2 rounded-full transition-colors;
+  }
+  .contact-button-sky {
+    @apply hover:text-sky-400 hover:border-sky-400;
+  }
+  .contact-button-green {
+    @apply hover:text-green-400 hover:border-green-400;
+  }
+  .contact-button-gray {
+    @apply hover:text-gray-400 hover:border-gray-400;
+  }
+  .contact-button-orange {
+    @apply hover:text-orange-400 hover:border-orange-400;
+  }
+</style>

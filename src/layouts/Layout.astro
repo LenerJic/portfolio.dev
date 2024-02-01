@@ -1,0 +1,60 @@
+---
+import "@fontsource-variable/outfit";
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta
+      name="description"
+      content="Bachiller técnico en Desarrollo de Sistemas"
+    />
+  </head>
+  <body>
+    <div
+      class="fixed top-0 -z-10 size-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
+    >
+    </div>
+  </body>
+  <slot />
+</html>
+
+<style is:global>
+  * {
+    box-sizing: border-box;
+    min-width: 0;
+  }
+  html {
+    font-family: "Outfit", sans-serif;
+    scroll-behavior: smooth;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  .active {
+    @apply bg-gradient-to-b from-emerald-500 via-cyan-600 to-blue-500 text-white;
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-400;
+  }
+  .btn-primary {
+    @apply text-sm px-4 py-2 text-gray-100/90 bg-gradient-to-r from-sky-500 to-indigo-500 rounded-full shadow-md shadow-blue-400/50 hover:from-sky-600 hover:to-indigo-600 transition-colors;
+  }
+  .work-title {
+    @apply absolute -bottom-full w-full group-hover:bottom-28 lg:group-hover:bottom-32 2xl:group-hover:bottom-40 transition-colors duration-500 z-50;
+  }
+  .work-icons {
+    @apply absolute -bottom-full w-full px-2 group-hover:bottom-10 lg:group-hover:bottom-14 2xl:group-hover:bottom-20 transition-all duration-500 z-50;
+  }
+</style>
